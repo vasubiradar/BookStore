@@ -1,0 +1,97 @@
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20240415/pngtree-glasses-and-stack-of-hardcover-books-image_15655261.jpg");
+  /* background: linear-gradient(135deg, #fbf85f, #3a3d98); */
+}
+
+.contact-form {
+  background-color: tan;
+    padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  animation: slideIn 1s ease-out;
+}
+
+.contact-heading {
+  font-size: 1.8rem;
+  color: #000000;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.contact-input,
+.contact-textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  outline: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.contact-input:focus,
+.contact-textarea:focus {
+  border-color: #3c2509;
+  box-shadow: 0 0 5px #3c2509;
+}
+
+.contact-textarea {
+  height: 120px;
+  resize: none;
+}
+
+.contact-submit-button {
+  background: #3c2509;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.contact-submit-button:hover {
+  background: #3a3d98;
+  transform: scale(1.05);
+}
+
+.contact-copyright {
+  font-size: 0.9rem;
+  color: #3a3d98;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.contact-copyright a {
+  color: #6c63ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-copyright a:hover {
+  color: #3a3d98;
+  text-decoration: underline;
+}
+
+/* Animations */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

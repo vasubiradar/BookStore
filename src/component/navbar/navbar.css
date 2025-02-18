@@ -1,0 +1,192 @@
+/* Navbar Styles */
+.navbar {
+  background-color: #f8f9fa; /* Light background for the navbar */
+  padding: 1rem 0;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid #e0e0e0; /* Border at the bottom of the navbar */
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #333;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 10px 15px;
+  margin: 0 0.5rem; /* Added spacing between links */
+  transition: all 0.3s ease;
+}
+
+/* Add underline effect on hover */
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #69080e;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  text-decoration: underline;
+}
+
+/* Active link styling */
+.navbar-light .navbar-nav .active .nav-link {
+  color: #69080e;
+  border-bottom: 2px solid #69080e; /* Underline for active link */
+}
+
+/* Navbar brand */
+.navbar-light .navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #69080e;
+}
+
+/* Navbar Brand Subtext */
+.navbar-light .navbar-brand h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #131212;
+}
+
+/* Navbar Toggler */
+.navbar-toggler.custom-toggler {
+  border: 2px solid #69080e;
+}
+
+.navbar-toggler.custom-toggler:hover {
+  background-color: #69080e;
+  color: white;
+}
+
+/* Profile Menu */
+.nav__profile-menu {
+  background-color: #fff;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 250px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #e0e0e0; /* Border around the profile menu */
+}
+
+.nav__profile-menu a {
+  color: #69080e;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* Profile menu link hover */
+.nav__profile-menu a:hover {
+  color: #f53d3d;
+  background-color: #f0f0f0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: underline; /* Underline on hover */
+}
+
+.nav__profile-menu img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.email {
+  font-size: 14px;
+  color: #777;
+  text-align: center;
+}
+
+/* Button Styles */
+.nav__link button,
+button {
+  padding: 10px 20px;
+  background-color: #69080e;
+  color: white;
+  border: 2px solid #69080e; /* Border added around the button */
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Button hover effect */
+.nav__link button:hover,
+button:hover {
+  background-color: #f53d3d;
+  transform: translateY(-2px);
+  border: 2px solid #f53d3d; /* Change border color on hover */
+}
+
+/* Cart Icon */
+.navbar .nav-icon {
+  font-size: 1.5rem;
+  color: #69080e;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-icon:hover {
+  color: #f53d3d;
+}
+
+.navbar .nav-icon .badge {
+  background-color: #69080e;
+  color: white;
+  top: -10px;
+  right: -10px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .navbar-collapse {
+    background-color: #f7f7f7;
+    margin-top: 1rem;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0; /* Border for collapsed navbar */
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 10px 0;
+  }
+
+  .nav__profile-menu {
+    width: 100%;
+    position: relative;
+    top: unset;
+    right: unset;
+    box-shadow: none;
+  }
+}
+
+/* Sticky Navbar */
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+
+/* "Sign In" as Button */
+.navbar-light .nav-link.sign-in-btn {
+  display: inline-block;
+  background-color: #69080e;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  border: 2px solid #69080e;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.navbar-light .nav-link.sign-in-btn:hover {
+  background-color: #f53d3d;
+  color: white;
+  border-color: #f53d3d;
+}

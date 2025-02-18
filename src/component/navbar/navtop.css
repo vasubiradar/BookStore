@@ -1,0 +1,56 @@
+/* Basic styling for the navbar container */
+.Akanksha {
+    background-color: #4d2a00; /* Dark teal background */
+    padding: 10px 0;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  /* Sticky navbar effect */
+  .Akanksha.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Container to center the content */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Styling for the Link */
+  .biradar {
+    color: white; /* White text */
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none; /* Remove underline */
+    padding: 8px 16px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover effect for the link */
+  .biradar:hover {
+    background-color: #ffbf40; /* Pinkish hover effect */
+    border-color: #000000; /* Border color same as background on hover */
+    color: white; /* Ensure text stays white on hover */
+    text-decoration: none; /* No underline on hover */
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .Akanksha {
+      padding: 12px 0; /* Adjust padding on smaller screens */
+    }
+  
+    .biradar {
+      font-size: 16px; /* Smaller font size on mobile */
+    }
+  }
+  

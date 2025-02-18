@@ -1,0 +1,150 @@
+/* Add New Item Form Container */
+.addbook-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1e3d3; /* Light brown background similar to sign-in */
+  padding: 40px;
+  height: 100vh;
+  border-radius: 10px;
+}
+
+/* Title of the Form */
+.addbook-form-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Styling the Form */
+.addbook-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  transition: all 0.3s ease;
+}
+
+/* Input Fields */
+.addbook-input-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.addbook-input-field label {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.addbook-input-field input,
+.addbook-input-field textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.addbook-input-field input:focus,
+.addbook-input-field textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.4); /* Blue glow on focus */
+}
+
+.addbook-input-field input:hover,
+.addbook-input-field textarea:hover {
+  border-color: #0056b3; /* Darker blue border on hover */
+}
+
+/* Submit Button Styling */
+.addbook-submit-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.addbook-submit-button:hover {
+  background-color: #218838;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  .addbook-form-container {
+    padding: 20px;
+  }
+
+  .addbook-form-title {
+    font-size: 1.5rem;
+  }
+
+  .addbook-form {
+    padding: 20px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .addbook-input-field input,
+  .addbook-input-field textarea {
+    font-size: 0.9rem;
+  }
+
+  .addbook-submit-button {
+    font-size: 1rem;
+  }
+}
+/* Add New Item Page Header */
+.addbook-form-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.addbook-page-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.addbook-description-title {
+  font-size: 1.1rem;
+  color: #666;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+/* Back Button */
+.back-button {
+  background-color: #4caf50; /* Green color */
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px 0;
+  display: block;
+  width: 200px;
+  text-align: center;
+}
+
+.back-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}

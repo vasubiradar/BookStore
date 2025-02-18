@@ -1,0 +1,208 @@
+/* profile.css */
+
+/* General styling for the profile page */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f0f8ff; /* Light background color */
+  min-height: 100vh;
+}
+
+.profile-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #007bff;
+  margin-bottom: 15px;
+}
+
+.profile-name {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.profile-email {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.profile-bio {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.profile-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.profile-btn,
+.logout-btn,
+.admin-btn,
+.register-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.profile-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.logout-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.admin-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.register-btn {
+  background-color: #ffc107;
+  color: white;
+}
+
+.profile-btn:hover,
+.logout-btn:hover,
+.admin-btn:hover,
+.register-btn:hover {
+  opacity: 0.8;
+}
+
+/* Styling for additional information sections */
+.profile-info {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+.profile-info h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.profile-info p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.profile-info ul {
+  list-style-type: none;
+  padding: 0;
+  color: #555;
+}
+
+.profile-info li {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+/* Free Book Section */
+.free-books-section {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin-top: 30px;
+}
+
+.free-books-section h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.book-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.book-item:last-child {
+  border-bottom: none;
+}
+
+.book-title {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.like-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.like-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .profile-card {
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .profile-info {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .profile-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .profile-name {
+    font-size: 1.5rem;
+  }
+
+  .profile-email {
+    font-size: 0.9rem;
+  }
+
+  .profile-bio {
+    font-size: 0.9rem;
+  }
+}

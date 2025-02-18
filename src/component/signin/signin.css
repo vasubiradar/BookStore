@@ -1,0 +1,140 @@
+/* signin.css */
+
+/* General container for the signin form */
+.signin-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f5e1a4; /* Light brown background */
+  padding: 20px;
+}
+
+/* Title for the signin form */
+.signin-form-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Styling for the form */
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  transition: all 0.3s ease;
+}
+
+/* Input fields for email and password */
+.signin-input-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.signin-input-field label {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.signin-input-field input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.signin-input-field input:focus {
+  border-color: #007bff;
+}
+
+/* Submit button styling */
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for the link text for sign-up */
+p {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #555;
+}
+
+p a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+/* Add a slight animation to the form */
+.signin-form-container {
+  animation: fadeIn 1s ease-out;
+}
+
+/* Animations for input fields and button */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .signin-form-container {
+    padding: 10px;
+  }
+
+  .signin-form-title {
+    font-size: 1.5rem;
+  }
+
+  .signin-form {
+    padding: 20px;
+    width: 90%;
+    max-width: 100%;
+  }
+
+  .signin-input-field input {
+    font-size: 0.9rem;
+  }
+
+  button[type="submit"] {
+    font-size: 1rem;
+  }
+}
